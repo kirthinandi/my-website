@@ -1,5 +1,104 @@
 body {
-    background: burlywood;
-    text-align: center;
-    font-size: large;
+    background: lightblue;
+    font-family: 'Work Sans' , sans-serif;
+}  
+
+h1 {
+    color:darkslateblue;
+    font-size: 35px;
+    float: left;
 }
+   
+h2 {
+    color:slateblue;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    position: fixed;
+    left: 65px;
+    top: 55px;
+}
+
+header {
+    font-size: 20px;
+    color:mediumvioletred;
+    background-color:palevioletred;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+}
+
+nav {
+    float: right;
+    position:fixed;
+    left: 650px;
+    right: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    padding-top: 35px;
+
+    position: relative;
+}
+
+nav a {
+    color:lightpink;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+nav a:hover {
+    color: darkmagenta;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color:darkmagenta;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+img {
+    width: 655px;
+    height: 500px;
+    position: fixed;
+    top: 200px;
+    right: 420px;
+}
+
+p {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+
+
+
