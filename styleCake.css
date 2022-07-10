@@ -1,0 +1,117 @@
+body {
+    background: lightblue;
+    font-family: 'Work Sans' , sans-serif;
+}  
+
+h1 {
+    color:darkslateblue;
+    font-size: 35px;
+    float: left;
+}
+   
+h2 {
+    color:slateblue;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 65px;
+    top: -40px;
+}
+
+header {
+    font-size: 20px;
+    color:mediumvioletred;
+    background-color:palevioletred;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+}
+
+nav {
+    float: right;
+    position:relative;
+    left: 250px;
+    right: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    padding-top: 35px;
+
+    position: relative;
+    left: 10px;
+}
+
+nav a {
+    color:lightpink;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+nav a:hover {
+    color: darkmagenta;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color:darkmagenta;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    position: relative;
+    right: 135px;
+    color:crimson;
+}
+
+body img {
+    width: 500px;
+    height: 550px;
+    padding-right: 50px;
+    position: relative;
+    top: 10px;
+    left: 435px;
+}
+
+dl {
+    padding-top: 50px;
+}
+
+dt {
+    font-size: 30px;
+}
+
+hX {
+    font-size: 30px;
+}
